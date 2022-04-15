@@ -11,7 +11,7 @@ Output: "3ab2c4da"
 let input = "aaabccdddda";
 
 function counter(input) {
-    let count = 0;
+    let count = 1;
     let arr = input.split("");
     let output = [];
     for (let i = 0; i < arr.length; i ++) {
