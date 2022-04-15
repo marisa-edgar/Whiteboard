@@ -10,20 +10,22 @@ Output: "3ab2c4da"
 
 let input = "aaabccdddda";
 
-function count(input) {
+function counter(input) {
+    let count = 0;
     let arr = input.split("");
     let output = [];
-    for(let i = 0; i < arr.length; i ++) {
+    for (let i = 0; i < arr.length; i ++) {
         arr[i] === arr[i + 1]
         count ++
-        i ++
-    } 
+    //    i ++
+    console.log(count);
     if (count === 1) {
         output.push(arr[i]);
     } else {
         output.push(arr[i] + count);
     }
     return output;
+    }  
 }
 
 
