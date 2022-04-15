@@ -19,3 +19,25 @@ function uniqueness(str) {
   }
   return true;
 }
+
+
+
+function uniqueness(str) {
+  for (let i = 0; i < str.length; i++) { 
+    for (let x = i + 1; x < str.length; x++) {
+      if (str[i] == str[x]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+function unique(input) {
+    for(i=0; i<input.length; i++) {
+        if (i != input.indexOf(input[i])){
+            return false
+        }
+    }
+    return true;
+}
