@@ -5,3 +5,40 @@ Example
 Input: "aaabccdddda"
 
 Output: "3ab2c4da"
+
+// without recursion 
+
+let input = "aaabccdddda";
+
+function count(input) {
+    let arr = input.split("");
+    let output = [];
+    for(let i = 0; i < arr.length; i ++) {
+        arr[i] === arr[i + 1]
+        count ++
+        i ++
+    } 
+    if (count === 1) {
+        output.push(arr[i]);
+    } else {
+        output.push(arr[i] + count);
+    }
+    return output;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// with recursion 
+
+let input = "aaabccdddda"

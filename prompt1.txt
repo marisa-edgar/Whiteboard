@@ -25,11 +25,12 @@ function replaceSpaces(input){
 
 // with recursion 
 
-function replace(input, valueToReplace) {
+function replace(input) {
     let a = input.split("")
-    let b = a.indexOf(valueToReplace)
+    let b = a.indexOf(" ")
     a[b] = "%20"
-    if (a.includes(valueToReplace)){
+    console.log(a)
+    if (a.includes(" ")){
         return replace(a.join(""))
     } else {
         return a.join("")
