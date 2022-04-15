@@ -9,3 +9,13 @@ Output: false
 Input: "copyright"
 
 Output: true
+
+let str = "hello"
+
+function uniqueness(str) {
+  let set = new Set(str)
+  if (set.size != str.length) {
+    return false;
+  }
+  return true;
+}

@@ -16,16 +16,15 @@ function counter(input) {
     let output = [];
     for (let i = 0; i < arr.length; i ++) {
         arr[i] === arr[i + 1]
-        count ++
-    //    i ++
+        count ++;
     console.log(count);
     if (count === 1) {
         output.push(arr[i]);
     } else {
-        output.push(arr[i] + count);
+        output.push(count + arr[i]);
     }
+}  
     return output;
-    }  
 }
 
 
