@@ -4,19 +4,34 @@ URLs cannot have spaces. Instead, all spaces in a string are replaced with %20. 
 You may not use the replace() method or regular expressions to solve this problem. Solve the problem with and without recursion.
 
 Example
-Input: "Jasmine Ann Jones"
+let input = "Jasmine Ann Jones"
 
 Output: "Jasmine%20Ann%20Jones"
+
+// without recursion
 
 function replaceSpaces(input){
     let arr = input.split("");
     let output = [];
-    arr.for(let i =0, i < arr.length, i++){
-        if (element === " ") {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === " ") {
             output.push("%20");
         } else {
-            output.push(element)
+            output.push(arr[i])
         }
-    })
+    }
     return output.join("")
+}
+
+// with recursion 
+
+function replace(input, valueToReplace) {
+    let a = input.split("")
+    let b = a.indexOf(valueToReplace)
+    a[b] = "%20"
+    if (a.includes(valueToReplace)){
+        return replace(a.join(""))
+    } else {
+        return a.join("")
+    }
 }
