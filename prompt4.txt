@@ -23,7 +23,13 @@ function uniqueness(str) {
   }
   return true;
 }
-
+function uniqueness(str) {
+  let set =[... new Set(str)]
+  if (set.size != str.length) {
+    return false;
+  }
+  return true;
+}
 
 
 function uniqueness(str) {
