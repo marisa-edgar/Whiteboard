@@ -9,6 +9,10 @@ Output: false
 Input: "copyright"
 
 Output: true
+//create a set of the string value which creates a clone of the str that excludes duplicate indexes 
+//compare the length of the set size to the length of the str
+// if they are different return false 
+// else return true
 
 let str = "hello"
 
